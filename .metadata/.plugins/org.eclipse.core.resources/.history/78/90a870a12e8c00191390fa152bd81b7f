@@ -1,0 +1,14 @@
+package jiekou;
+
+import org.apache.http.client.methods.HttpGet;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String url="https://www.baidu.com/";
+		HttpGet get = new HttpGet(url);
+
+	}
+
+}

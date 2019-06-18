@@ -1,0 +1,52 @@
+package rimi.com;
+
+import java.util.Scanner;
+
+public class lianxi1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("商品价格：");
+//		double price=sc.nextDouble();
+//		if(price>400){
+//			System.out.println("折扣实际支付金额为:"+price*0.85);
+//			
+//		}else{
+//			System.out.println("实际金额为："+price);
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("出生年份：");
+//		int age=sc.nextInt();
+//		if(2018-age<=18){
+//			System.out.println("00后");
+//		}else{
+//			System.out.println("不是00后");
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("商品价格：");
+//		double price=sc.nextDouble();
+//		if(price>400){
+//			System.out.println("折扣实际支付金额为:"+price*0.85);
+//			
+//		}else if(price<=400){
+//			System.out.println("优惠后实际金额为："+price*0.95);
+//		}
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("身高：");
+		double hight=sc.nextDouble();
+		if(hight>=1.2){
+			System.out.println("成人票");
+		}else{
+			System.out.println("儿童票");
+		}
+//		
+		
+
+
+	}
+
+}

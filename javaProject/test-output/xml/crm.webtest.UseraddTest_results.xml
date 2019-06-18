@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="30.370">
+  <properties />
+  
+  
+            <testcase name="addsuccess" time="5.127" classname="crm.webtest.UseraddTest" />
+                <testcase name="addF5" time="4.718" classname="crm.webtest.UseraddTest" />
+                <testcase name="addF2" time="4.975" classname="crm.webtest.UseraddTest" />
+                <testcase name="addF1" time="5.933" classname="crm.webtest.UseraddTest" />
+                <testcase name="addF4" time="4.763" classname="crm.webtest.UseraddTest" />
+                <testcase name="addF3" time="4.854" classname="crm.webtest.UseraddTest" />
+      
+</testsuite>

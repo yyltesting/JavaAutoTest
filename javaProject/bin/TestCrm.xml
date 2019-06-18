@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="crm.webtest.LoginTest"/>
+      <class name="crm.webtest.UseraddTest"/>
+      <class name="crm.webtest.UserselectTest"/>
+      <class name="crm.webtest.UserupdateTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

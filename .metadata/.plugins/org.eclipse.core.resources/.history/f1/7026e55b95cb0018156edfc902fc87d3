@@ -1,0 +1,189 @@
+package rimi.com;
+
+import java.util.Scanner;
+
+public class Info {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		System.out.println("你好！");
+//		int numberOne=5;
+//		int numberTwo=10;
+//		int numberTree;
+//		numberTree=numberOne;
+//		numberOne=numberTwo;
+//		numberTwo=numberTree;
+//		System.out.println("number:"+numberOne);
+		
+//		double score2=(double)82;
+//		System.out.println(score2);
+//		double avg=78.5;
+//		int rise=5;
+//		int avg1=(int)avg + rise;
+//		System.out.println(avg1);
+		
+//		System.out.println("207b005927"+"\n"+"                         上海（售）"+"\n"+"上海南一K287次一>火星");
+//		int a=15;
+//		int b=2;
+//		double c=2;
+//		System.out.println(a+"/"+b+"="+(a/b));
+//		System.out.println(a+"%"+b+"="+(a%b));
+//		System.out.println(a+"/"+c+"="+(a/c));
+//		System.out.println(a+"%"+c+"="+(a%c));
+		
+//		int x=10;
+//		int a=x+x++;
+//		System.out.println("a="+a);
+//		System.out.println("x="+x);
+//		int b=x+++x;
+//		System.out.println("b="+b);
+//		System.out.println("x="+x);
+//		int c = x + x--;
+//		System.out.println("c =" + c);
+//		System.out.println("x =" + x);
+//
+//		int d = x + --x;
+//		System.out.println("d =" + d);
+//		System.out.println("x =" + x);
+		
+//		boolean x, y, z;
+//		int a = 15;
+//		int b = 2;
+//		double c =15;
+//		x = a > b; //true;
+//		y = a < b; //false;
+//		z = a != b; //true;
+//		System.out.println("x =" + x);
+//		System.out.println("y =" + y);
+//		System.out.println("z =" + z);
+		
+//		int a = 15;   
+//		int b = 2;
+//
+//		int x = a & b;    //转二进制运算，&都为1时则为1，否则为0
+//		int y = a | b;    //都为0时则为0，否则为1
+//		int z = a ^ b;    //值相同为0，否则为1
+//		System.out.println(a + "&" + b + "=" + x);
+//		System.out.println(a + "|" + b + "=" + y);
+//		System.out.println(a + "^" + b + "=" + z);
+		
+//		int x ;
+//		double y;
+//		x = (int)22.5 + (int)34.7;
+//		y = (double)x;
+//		System.out.println("x = " + x);
+//		System.out.println("y = " + y);
+		
+//		int i = 5;
+//		int j = 5;
+//		int m = 5;
+//		int n = 5;
+//		i++;
+//		j = j + 1;
+//		m--;
+//		n = n - 1;
+//		System.out.println(i);
+//		System.out.println(i++);    //i++在内存中已运行，只是再此过程中不表达i值
+//		System.out.println(++i);    //直接运行即表达i值
+//		System.out.println(i--);
+//		System.out.println();
+//		System.out.println(j);
+//		System.out.println(j++);
+//		System.out.println(j--);
+//		System.out.println(--j);
+//		System.out.println();
+//		System.out.println(m);
+//		System.out.println(n);
+		
+//		int i = 0;
+//		int j = 0;
+//		System.out.println(i);
+//		System.out.println(j);
+//		i++;
+//
+//		++j;
+//		System.out.println(i);
+//		System.out.println(j);
+//		System.out.println("--------------------------");
+//		System.out.println(i++);
+//		System.out.println(++j);
+//		System.out.println("===========================");
+//		System.out.println(i);
+//		System.out.println(j);
+		
+//		Scanner sc=new Scanner(System.in);  //实例化Scanner对象
+//		System.out.println("请输入你的名字：");
+//		String name=sc.next();
+//		System.out.println("请输入你的年龄：");
+//		int age=sc.nextInt();
+//		System.out.println("名字："+name+"  年龄："+age);
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("请输入你的成绩:");
+//		double score=sc.nextDouble();
+//		String message=score>=60?"及格":"不及格";
+//		System.out.println(message);
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("please your roomnumber:");
+//		String roomnumber=sc.next();
+//		switch(roomnumber){
+//		case "A":
+//			System.out.println("吃苹果");
+//			break;
+//		case "B":
+//			System.out.println("吃香蕉");
+//			break;
+//		case "C":
+//			System.out.println("吃西瓜");
+//			break;
+//		default:
+//			System.out.println("吃锤子");
+//		}
+//		if (){
+//			
+//		}else if(){
+//			
+//		}else(){
+//			
+//		}
+		
+//		int a=1;
+//		int b=0;
+//		while(a<=50){
+//			b=b+a;
+//			a=a+2;
+//		}
+//		System.out.println(b);
+		
+		int a=1;
+		while(a<=5){
+		switch(a){
+		case 1:
+			System.out.println("*");
+			break;
+		case 2:
+			System.out.println("**");
+			break;
+		case 3:
+			System.out.println("***");
+			break;
+		case 4:
+			System.out.println("****");
+			break;
+		case 5:
+			System.out.println("*****");
+		
+		}
+		a++;
+			
+		}
+
+		
+
+				
+	
+		
+	}
+
+}

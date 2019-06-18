@@ -1,0 +1,46 @@
+package rimi.com;
+
+import java.util.Scanner;
+
+public class for_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		for(int i=1;i<=5;i++){
+//			for(int j=1;j<=5-i;j++){
+//				System.out.print(" ");
+//			}
+//			for(int j=1;j<=2*i-1;j++){
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		
+		int a[]={2,5,9,6,3,1};
+		for(int i=0;i<a.length;i++){
+			for(int j=0;j<a.length-1-i;j++){
+				int temp;
+				if(a[j]>a[j+1]){
+					temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+				}
+			}
+		}
+		for(int b=0;b<a.length;b++){
+			System.out.print(a[b]);
+			}
+			
+			
+			
+			
+			
+		}
+	}
+		
+		
+		
+		
+		
+
+

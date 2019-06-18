@@ -1,0 +1,24 @@
+package rimi.com;
+
+import java.util.Scanner;
+
+public class lianxi1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("商品价格：");
+		double price=sc.nextDouble();
+		if(price>400){
+			System.out.println("折扣实际支付金额为:"+price*0.85);
+			
+		}else{
+			System.out.println("实际金额为："+price);
+		}
+		
+		
+
+
+	}
+
+}

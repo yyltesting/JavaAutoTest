@@ -1,0 +1,342 @@
+package rimi.com;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.text.DateFormat;
+import java.util.Scanner;
+
+public class lianxi1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("商品价格：");
+//		double price=sc.nextDouble();
+//		if(price>400){
+//			System.out.println("折扣实际支付金额为:"+price*0.85);
+//			
+//		}else{
+//			System.out.println("实际金额为："+price);
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("出生年份：");
+//		int age=sc.nextInt();
+//		if(age>=2000){
+//			System.out.println("00后");
+//		}else{
+//			System.out.println("不是00后");
+//		}
+//		DateFormat
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("商品价格：");
+//		double price=sc.nextDouble();
+//		if(price>400){
+//			System.out.println("折扣实际支付金额为:"+price*0.85);
+//			
+//		}else if(price<=400){
+//			System.out.println("优惠后实际金额为："+price*0.95);
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("身高：");
+//		double hight=sc.nextDouble();
+//		if(hight>=1.2){
+//			System.out.println("成人票");
+//		}else{
+//			System.out.println("儿童票");
+//		}
+//		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("老板说的薪资：");
+//		double price=sc.nextDouble();
+//		if (price>10000){
+//			System.out.println("兴奋");
+//		}else if(1000<price){
+//			System.out.println("高兴");
+//		}else{
+//			System.out.println("失望");
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("余额：");
+//		int price=sc.nextInt();
+//		if (price>1000){
+//			System.out.println("吃海鲜");
+//		}
+//		else if(price>200){
+//			System.out.println("吃火锅");
+//		}else if(price>20){
+//			System.out.println("吃炒饭");
+//		}else if(price>2){
+//			System.out.println("吃面包");
+//		}else{
+//			System.out.println("不吃");
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("输入一个数：");
+//		int b=503;
+//		int a=sc.nextInt();
+//		if (a>b){
+//			System.out.println("太大了");
+//		}else if(a<b){
+//			System.out.println("太小了");
+//		}else {
+//			System.out.println("刚刚好");
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("温度：");
+//		double a=sc.nextDouble();
+//		if (a<15){
+//			System.out.println("寒冷");
+//		}else if(a<29){
+//			System.out.println("舒适");
+//		}else{
+//			System.out.println("炎热");
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("输入一个数：");
+//		int a=sc.nextInt();
+//		if (a%2==0){
+//			System.out.println("偶数");
+//		}else{
+//			System.out.println("不是偶数");
+//		}
+		
+//		double h=1.75;
+//		double t=80;
+//		if ((t/(h*h))<18.5){
+//			System.out.println("过轻");
+//		}else if((t/(h*h))<25){
+//			System.out.println("正常");
+//		}else if((t/(h*h))<28){
+//			System.out.println("过重");
+//		}else if((t/(h*h))<32){
+//			System.out.println("肥胖");
+//		}else if((t/(h*h))>=32){
+//			System.out.println("严重肥胖");
+//		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("输入年龄：");
+//		int age=sc.nextInt();
+//		System.out.println("输入姓名长度：");
+//		int name=sc.nextInt();
+//		if (age<=100){
+//			System.out.println("年龄范围为0-100");
+//		}else{
+//			System.out.println("年龄范围大于100");
+//		}
+//		if (name<3){
+//			System.out.println("名字长度小于3");
+//		}else if(name<=5){
+//			System.out.println("名字长度3-5");
+//		}else {
+//			System.out.println("名字长度大于51");
+//		}
+//		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("输入月份：");
+//		int month=sc.nextInt();
+//		switch(month){
+//		case 3:
+//		case 4:
+//		case 5:
+//			System.out.println("春");
+//			break;
+//		case 6:
+//		case 7:
+//		case 8:
+//			System.out.println("夏");
+//			break;
+//		case 9:
+//		case 10:
+//		case 11:
+//			System.out.println("秋");
+//			break;
+//		case 12:
+//		case 1:
+//		case 2:
+//			System.out.println("冬");
+//			break;
+//		}
+		InputStreamReader input = new InputStreamReader(System.in);
+		BufferedReader buffred = new BufferedReader(input);
+		try{
+			System.out.println("请输入姓名：");
+			String name=buffred.readLine();
+			if (name.length()==0){
+				System.out.println("请输入姓名");
+			}else if(name.length()>10){
+				System.out.println("姓名不能大于10");
+			}else{
+				System.out.println("格式正确");
+			}
+		Scanner sc=new Scanner(System.in);
+		System.out.println("输入年龄：");
+		int age=sc.nextInt();
+		System.out.println("输入性别：");
+		String sex=sc.next();
+		if (sex.equals("男")){
+			if(age<=3){
+				System.out.println("男婴");
+			}
+			else if(age<=18){
+				System.out.println("正太");
+			}
+			else if(age<=28){
+				System.out.println("欧巴");
+			}
+			else if(age<=50){
+				System.out.println("蜀黎");
+			}
+			else if(age>50){
+				System.out.println("爷爷");
+			}
+		}
+		else if (sex.equals("女")){
+			if(age<=3){
+				System.out.println("女婴");
+			}
+			else if(age<=18){
+				System.out.println("萝莉");
+			}
+			else if(age<=28){
+				System.out.println("妹纸");
+			}
+			else if(age<=50){
+				System.out.println("熟女");
+			}
+			else if(age>50){
+				System.out.println("奶奶");
+			}
+		}
+		
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("输入星期：");
+//		int week=sc.nextInt();
+//		switch(week){
+//		case 1:
+//		case 3:
+//		case 5:
+//			System.out.println("吃包子");
+//			break;
+//		case 2:
+//		case 4:
+//		case 6:
+//			System.out.println("吃油条");
+//			break;
+//		case 7:
+//			System.out.println("主席套餐");
+//			break;
+//		}
+		
+//		int a=2;
+//		int b=0;
+//		while(a<=50){
+//			b=a+b;
+//			a=a+2;
+//		}
+//		System.out.println(b);
+		
+//		int a=100;
+//		while(a<=200){
+//			if (a%7==0&&a%8==0){
+//				System.out.println(a);
+//			}
+//			a++;
+//		}
+		
+//		int a=1;
+//		while(a<=100){
+//			if(a==6||a%10==6||(int)a/10==6){
+//					System.out.println(a);
+//			}
+//			a++;
+//		}
+		
+//		int a=1;
+//		while(a<=100){
+//			if(a%10==(int)a/10){
+//				System.out.println(a);
+//			}
+//			a++;
+//		}
+		
+//		int i=1;
+//		while (i<=3){
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("请输入用户名：");
+//		String user=sc.next();
+//		System.out.println("请输入密码：");
+//		int password=sc.nextInt();
+//		if (user.equals("admin")||password==866866){
+//			System.out.println("输入正确");
+//			break;
+//		}
+//		
+//		else{
+//			System.out.println("请重新输入");
+//		}
+//		i++;
+//		}
+		
+//		int i=1;
+//		double j=0;
+//		while (i<=7){
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("请输入温度：");
+//		double t=sc.nextDouble();
+//		j=j+t;
+//		i++;
+//		}
+//		System.out.println(j/7);
+		
+
+//		int a=1;
+//		while(a<=5){
+//			int i=1;
+//			while(i<=a){
+//			System.out.print("*");
+//			i++;
+//			}
+//			System.out.println();
+//			a++;
+//		}
+		
+//		int a=1;
+//		int b=4;
+//		int c=1;
+//		while(a<=5){
+//			int i=1;
+//			while(i<=b){
+//				System.out.print(" ");
+//				i++;
+//			}
+//			int j=1;
+//			while(j<=c){
+//					System.out.print("*");
+//					j++;
+//				}			
+//			System.out.println();
+//			a++;
+//			b--;
+//			c=c+2;
+//				
+//			}
+//			
+//		}
+		
+//		int a=1;
+//		while(a<=4){
+//			
+//		}
+		
+	
+
+
+	}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RemiTest.xml&apos; to &apos;shoujiPriject&apos;&#x0D;&#x0A;- Original project: &apos;javaProject&apos;&#x0D;&#x0A;- Destination element: &apos;shoujiPriject&apos;&#x0D;&#x0A;- Original element: &apos;RemiTest.xml&apos;" description="Copy file" destination="=shoujiPriject" element1="RemiTest.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1540459635016" units="0" version="1.0"/>
+</session>
