@@ -1,0 +1,43 @@
+[
+  {
+  "description":"模拟一个带参数cookies的GET请求",
+  "request":{
+  "uri":"/getcookiesdemo",
+  "method":"get",
+  "queries":{
+  "name":"yyl",
+  "age":"22"
+  },
+  "cookies":{
+  "login":"true"
+  }
+  },
+  "response":{
+  "headers":{ "Content-Type":"text/html;charset=gbk" },
+  "text":"这是一个带参数cookies的GET请求"
+  }
+  },
+  {
+    "description":"模拟一个有参数Cookies的POST请求",
+    "request":{
+      "uri":"/postcookiesdemo",
+      "method":"post",
+      "json":{
+      "name":"yyl",
+      "age":"22"
+      },
+      "cookies":{
+      "loginto":"true"
+      }
+    },
+    "response":
+    {
+    "headers":{ "Content-Type":"text/html;charset=gbk" },
+    "status":200,
+    "json":{
+    "yyl":"success",
+    "status":"1"
+    }
+    }
+  }
+]

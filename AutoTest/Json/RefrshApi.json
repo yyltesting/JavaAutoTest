@@ -1,0 +1,9 @@
+[
+{
+    "description":"模拟一个重定向网页",
+    "request":{
+      "uri":"/redirect"
+      },
+      "redirectTo":"http://www.baidu.com"
+ }
+]
