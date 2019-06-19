@@ -9,3 +9,4 @@
 2019-06-13 16:02:16,203 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @631661ms
 2019-06-13 16:56:43,336 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@5eb47d4c{HTTP/1.1}{127.0.0.1:0}
 2019-06-13 16:56:43,390 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@8be5ae5{/help,null,UNAVAILABLE}
+2019-06-18 17:37:39,387 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-webapp/1.0/maven-archetype-webapp-1.0.jar
