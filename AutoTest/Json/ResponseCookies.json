@@ -1,0 +1,16 @@
+[
+  {
+  "description":"模拟一个返回cookies的GET请求",
+  "request":{
+  "uri":"/getcookies",
+  "method":"get"
+  },
+  "response":{
+  "headers":{ "Content-Type":"text/html;charset=gbk" },
+  "cookies":{
+  "login":"true"
+  },
+  "text":"成功获取cookies"
+  }
+  }
+  ]
