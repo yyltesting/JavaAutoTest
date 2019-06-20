@@ -5,5 +5,22 @@
       "uri":"/redirect"
       },
       "redirectTo":"http://www.baidu.com"
+ },
+ {
+ "description":"重定向到自己的网页",
+ "request":{
+ "uri":"/redirect/topath"
+ },
+ "redirectTo":"/redirect/new"
+ },
+ {
+ "description":"自己的网页",
+ "request":{
+ "uri":"/redirect/new"
+ },
+ "response":{
+ "text":"重定向成功啦",
+ "headers":{ "Content-Type":"text/html;charset=gbk" }
+ }
  }
 ]
