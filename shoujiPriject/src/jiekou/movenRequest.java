@@ -160,24 +160,21 @@ public class movenRequest {
 	            httpclient.close();
 	        }
 		}
-	
+
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
 		// TODO Auto-generated method stub
-		movenRequest request=new movenRequest();
-		HashMap<String,String> paramsMap =new HashMap<>();
-//		paramsMap.put("username", "admin");
-//		paramsMap.put("password", "nsc12345");
-//		paramsMap.put("rememberMe", "on");
-//		request.HttpPost("http://192.168.2.139:8080/login", paramsMap);
-		paramsMap.put("path", "0");
-		paramsMap.put("version", "0");
-		paramsMap.put("sortName", "name");
-		paramsMap.put("order", "asc");
-		String url = "http://192.168.2.139:8080/colligate/exchange/0/list/0";
-		request.HttpPost(url, paramsMap);
-//		request.httpGet("http://www.baidu.com");
-//		request.HttpGet("http://www.baidu.com/s", "wd", "java");
+//		movenRequest request=new movenRequest();
+//		HashMap<String,String> paramsMap =new HashMap<>();
+//		paramsMap.put("path", "0");
+//		paramsMap.put("version", "0");
+//		paramsMap.put("sortName", "name");
+//		paramsMap.put("order", "asc");
+//		String url = "http://192.168.2.139:8080/colligate/exchange/0/list/0";
+//		request.HttpPost(url, paramsMap);
+		movenRequest getcookies = new movenRequest();
+		getcookies.httpGet("http://localhost:8899/getcookies");
+
 
 	}
 }
