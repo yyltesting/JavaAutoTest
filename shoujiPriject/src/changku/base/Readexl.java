@@ -16,69 +16,56 @@ import org.apache.poi.ss.usermodel.CellType;
 import test.ReadwpsExl;
 
 public class Readexl {
-			//定义文件输入流
-		public static 	FileInputStream fs;
-			//定义poi文件系统
-		public static 	POIFSFileSystem ps;
-			//定义工作簿
-		public static 	HSSFWorkbook wb;
-			//定义sheet页
-		public static 	HSSFSheet st;
-			//定义row
-		public static 	HSSFRow rows;
-			//定义cell
-		public static 	HSSFCell cell;
-			//定义字符串
-		public static 	String value;
-			
-			public static String readCell(String sheetName,int hang,int danyuange){
-				List<List<String>> list=new ArrayList<>();
-				try {
-					//实例化文件
-					fs=new FileInputStream("D:\\java+selenium\\南网自动化用例2.xls");
-					//实例化poi
-					ps=new POIFSFileSystem(fs);
-					//实例化工作簿
-					wb=new HSSFWorkbook(ps);
-					//实例化页
-					st=wb.getSheet(sheetName);
-					//实例化行
-					for(int j=0;j<=st.getLastRowNum();j++){
-					rows=st.getRow(j);
-					//实例化单元格(列)
-					List<String> listrow=new ArrayList<>();
-					for(int i=0;i<=rows.getLastCellNum();i++){
-						cell=rows.getCell(i);
-					if(cell==null){
-						continue;
-					}
-					cell.setCellType(CellType.STRING);
-					//获取内容
-					value=cell.getStringCellValue();
-					listrow.add(value);
-//					System.out.print(value+" ");
-					}
-					list.add(listrow);
-//					System.out.println("");
-					}
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				if(list.get(hang).get(danyuange).equals(null)) {
-					return "";
-				}else {
-					return list.get(hang).get(danyuange);
-				}
-			}
+	//定义文件输入流
+	public static 	FileInputStream fs;
+		//定义poi文件系统
+	public static 	POIFSFileSystem ps;
+		//定义工作簿
+	public static 	HSSFWorkbook wb;
+		//定义sheet页
+	public static 	HSSFSheet st;
+		//定义row
+	public static 	HSSFRow rows;
+		//定义cell
+	public static 	HSSFCell cell;
+		//定义字符串
+	public static 	String value;
 
+public static String readCell(String sheetname,int i ,int j){
+try {
+	//实例化文件
+	fs=new FileInputStream("D:\\尹彦力仓库\\book1.xls");
+	//实例化poi
+	ps=new POIFSFileSystem(fs);
+	//实例化工作簿
+	wb=new HSSFWorkbook(ps);
+	//实例化页
+	st=wb.getSheet(sheetname);
+	//实例化行
+	rows=st.getRow(i);
+	//实例化单元格(列)
+	cell=rows.getCell(j);
+	if(cell==null){
+		return "";
+	}else{
+	cell.setCellType(CellType.STRING);
+	//获取内容
+	value=cell.getStringCellValue();
+	}
+	
+} catch (FileNotFoundException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+return value;
+}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Readexl e=new Readexl();
-		System.out.println(e.readCell("Sheet3", 5, 5));
+//		Readexl e=new Readexl();
+//		System.out.println(e.readCell("Sheet3", 5, 5));
 		
 
 

@@ -1,30 +1,29 @@
 package AutoApi.base;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.collections4.Get;
+
 import org.apache.http.Consts;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.config.RequestConfig;
-import org.apache.http.client.config.RequestConfig.Builder;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.openqa.selenium.remote.server.handler.SetScriptTimeout;
 
 public class RequestBase {
 	//返回两个结果 code和返回结果
@@ -44,6 +43,10 @@ public class RequestBase {
         
         //获取请求的认证
         String Authorization = (String)baseParam.get("Authorization");
+        //获取请求的用户名认证
+        String username = (String)baseParam.get("username");
+        //获取请求的密码认证
+        String password = (String)baseParam.get("password");
         //获取请求参数建立服务器连接超时的时间
         String connectionTimeout = (String)baseParam.get("connectionTimeout");
         //获取请求参数数据传输超时的时间
@@ -56,10 +59,38 @@ public class RequestBase {
         String body = (String) baseParam.get("body");
         //获取输入请求的方法
         String methodName = (String)baseParam.get("methodName");
-        
+        //获取输入请求的cookies
+        String cookie = (String)baseParam.get("cookies");
         //定义一个请求方法为空
         org.apache.http.client.methods.HttpRequestBase method = null;
         
+        //判断是否需要认证
+        if(!isEmpty(Authorization)){
+        	//UsernamePasswordCredentials creds = new UsernamePasswordCredentials("13378105523", "7c4a8d09ca3762af61e59520943dc26494f8941b");
+        	// 创建HttpClientBuilder
+            HttpClientBuilder httpClientBuilder = HttpClientBuilder.create();
+            // 设置BasicAuth
+            CredentialsProvider provider = new BasicCredentialsProvider();
+            // 创建身份验证范围
+            AuthScope scope = new AuthScope(AuthScope.ANY_HOST, AuthScope.ANY_PORT, AuthScope.ANY_REALM);
+            // 创建证书对，在此处填写用户名和密码
+            UsernamePasswordCredentials creds = new UsernamePasswordCredentials(username, password);
+            // 注入的凭证
+            provider.setCredentials(scope, creds);
+            // 设置缺省凭据提供程序
+            httpClientBuilder.setDefaultCredentialsProvider(provider);
+            }
+        
+//        //添加cookies
+//        if(!isEmpty(cookie)){
+//        	CookieStore cookieStore = new BasicCookieStore();
+//        	BasicClientCookie cookie2 = new BasicClientCookie("", "");
+//        	cookie2.setVersion(0);
+//        	cookie2.setDomain(ip);
+//        	cookie2.setPath("/");
+//        	cookieStore.addCookie(cookie2);
+//        	httpclient = HttpClients.custom().setDefaultCookieStore(cookieStore).build();
+//        }
 
         //判断methodName请求方法 为空的情况
         if(isEmpty(methodName)){
@@ -156,14 +187,13 @@ public class RequestBase {
         }
         
         //定义响应的内容
-        
         String returnBody = "";
-//        status = httpclient.executeMethod(method);
-//        returnBody = method.getResponseBodyAsString();
         CloseableHttpResponse response=null;
-        
+        try{
+			
         //发送请求，得到响应
         response=httpclient.execute(method);
+        //得到响应体
         returnBody =EntityUtils.toString(response.getEntity());
         
         //定义一些响应码说明内容
@@ -171,29 +201,45 @@ public class RequestBase {
             codeMap.put(401,"执行方法没有授权");
             codeMap.put(405,"执行方法不对,请确认是get或是post");
             codeMap.put(415,"请确认content-type类型是否正确");
+            codeMap.put(300, "请求重定向");
+            codeMap.put(500, "服务器报错500");
         
         //得到响应码
         int status = response.getStatusLine().getStatusCode();
+    
+        //判断响应码非200
         if(status!=200){
+        	//在定义的响应内容中获取body
             String exceptionMsg=codeMap.get(status);
+            //非200的响应码且不存在在定义的响应码中
             if(isEmpty(exceptionMsg)){
                 returnMap.put("returnBody","有异常错误，百度查一下code码含义");
+            //非200的响应码存在在定义的响应码中
             }else{
+            	//返回内容中加入body 
                 returnMap.put("returnBody",codeMap.get(status));
             }
+            //返回内容中加入状态吗
             returnMap.put("status",status+"");
-
-
+        //判断响应码200    
         }else {
             returnMap.put("status",status+"");
             returnMap.put("returnBody",returnBody);
         }
-
+        //返回响应的结果数组
         return returnMap;
-
-
     }
-
+        //关闭容器
+        finally {
+        	if (response != null) {
+        		response.close();
+        	}
+        	httpclient.close();
+        }
+    }
+        
+    
+    //如果输入的string类型中存在空值
     private static boolean isEmpty(String n){
         boolean f = true;
         if(null!=n&&!"".equals(n)){
@@ -204,15 +250,24 @@ public class RequestBase {
 
 
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
 		Map<String, String> baseParam = new HashMap<String, String>();
 		HashMap<String, String> bodyParam = new HashMap<String, String>();
 		Map<String, String> headerMap = new HashMap<String, String>();
-		baseParam.put("url", "http://localhost:8899/getcookies");
-		baseParam.put("methodName", "Get");
-		Map<String,String> returnMap = new HashMap<String, String>();
-		System.out.println(RequestBase.request(baseParam, bodyParam, headerMap));
+		baseParam.put("url", "http://localhost:8899/postparamdemo");
+		baseParam.put("methodName", "Post");
+//		headerMap.put("Authorization", "Basic MTMzNzgxMDU1MjM6N2M0YThkMDljYTM3NjJhZjYxZTU5NTIwOTQzZGMyNjQ5NGY4OTQxYg==");
+//		headerMap.put("Connection", "keep-alive");
+		baseParam.put("body", "name=yyl&age=22");
+		bodyParam.put("name", "yyl");
+		bodyParam.put("age", "22");
+		try {
+			System.out.println(RequestBase.request(baseParam, bodyParam, headerMap));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
