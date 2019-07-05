@@ -11,7 +11,29 @@
   "login":"true"
   },
   "text":"成功获取cookies"
-  
   }
+  },
+  {
+ "description":"模拟一个有参数Cookies的POST请求",
+    "request":{
+      "uri":"/postcookiesdemo",
+      "method":"post",
+      "forms":{
+      "name":"yyl",
+      "age":"22"
+      },
+      "cookies":{
+      "login":"true"
+      }
+    },
+    "response":
+    {
+    "headers":{ "Content-Type":"text/html;charset=gbk" },
+    "status":200,
+    "json":{
+    "yyl":"success",
+    "status":"1"
+    }
+    }
   }
   ]

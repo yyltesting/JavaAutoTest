@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="957" started-at="2019-06-25T09:38:39Z" finished-at="2019-06-25T09:38:40Z">
+  <suite name="Default suite" duration-ms="1145" started-at="2019-06-28T09:33:09Z" finished-at="2019-06-28T09:33:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="957" started-at="2019-06-25T09:38:39Z" finished-at="2019-06-25T09:38:40Z">
-      <class name="AutoApi.test.LoginTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:AutoApi.test.LoginTest@d2cc05a]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2019-06-25T17:38:39Z" finished-at="2019-06-25T17:38:39Z">
+    <test name="Default test" duration-ms="1145" started-at="2019-06-28T09:33:09Z" finished-at="2019-06-28T09:33:10Z">
+      <class name="AutoApi.test.ApiTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:AutoApi.test.ApiTest@d2cc05a]" name="beforeClass" is-config="true" duration-ms="13" started-at="2019-06-28T17:33:09Z" finished-at="2019-06-28T17:33:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:AutoApi.test.LoginTest@d2cc05a]" name="f" duration-ms="929" started-at="2019-06-25T17:38:39Z" finished-at="2019-06-25T17:38:40Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Tologin()[pri:0, instance:AutoApi.test.ApiTest@d2cc05a]" name="Tologin" duration-ms="976" started-at="2019-06-28T17:33:09Z" finished-at="2019-06-28T17:33:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:AutoApi.test.LoginTest@d2cc05a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-06-25T17:38:40Z" finished-at="2019-06-25T17:38:40Z">
+        </test-method> <!-- Tologin -->
+        <test-method status="PASS" signature="Topass()[pri:0, instance:AutoApi.test.ApiTest@d2cc05a]" name="Topass" duration-ms="136" started-at="2019-06-28T17:33:10Z" depends-on-methods="AutoApi.test.ApiTest.Tologin" finished-at="2019-06-28T17:33:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- AutoApi.test.LoginTest -->
+        </test-method> <!-- Topass -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:AutoApi.test.ApiTest@d2cc05a]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-06-28T17:33:10Z" finished-at="2019-06-28T17:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- AutoApi.test.ApiTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

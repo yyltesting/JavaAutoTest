@@ -12,24 +12,33 @@ import org.apache.http.Consts;
 import org.apache.http.NameValuePair;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
+import com.gargoylesoftware.htmlunit.util.Cookie;
+
 public class RequestBase {
+	public static CookieStore cookieStore =new BasicCookieStore();;
 	//返回两个结果 code和返回结果
     public static Map<String,String> request(Map<String,String>baseParam,HashMap<String,String>bodyParam,Map<String,String>headerMap) throws IOException {
-    	//创建httpclient的客户端
-    	CloseableHttpClient httpclient=HttpClients.createDefault();
+    	//创建可带cookies容器的httpclient的客户端
+    	CloseableHttpClient httpclient=HttpClients.custom()
+	             .setDefaultCookieStore(cookieStore)
+	             .build();
     	//创建一个返回数据的数组map
         Map<String,String> returnMap = new HashMap<String, String>();
         
@@ -55,8 +64,10 @@ public class RequestBase {
         String ip = (String)baseParam.get("ip");
         //获取请求参数的端口号
         String portStr = (String) baseParam.get("portStr");
-        //获取请求参数体
+        //获取是否有请求参数体
         String body = (String) baseParam.get("body");
+        //获取是否有请求头
+        String header = (String) baseParam.get("header");       
         //获取输入请求的方法
         String methodName = (String)baseParam.get("methodName");
         //获取输入请求的cookies
@@ -81,15 +92,13 @@ public class RequestBase {
             httpClientBuilder.setDefaultCredentialsProvider(provider);
             }
         
-//        //添加cookies
+        //添加cookies
 //        if(!isEmpty(cookie)){
-//        	CookieStore cookieStore = new BasicCookieStore();
-//        	BasicClientCookie cookie2 = new BasicClientCookie("", "");
-//        	cookie2.setVersion(0);
-//        	cookie2.setDomain(ip);
-//        	cookie2.setPath("/");
-//        	cookieStore.addCookie(cookie2);
-//        	httpclient = HttpClients.custom().setDefaultCookieStore(cookieStore).build();
+//        BasicClientCookie cookies = new BasicClientCookie("name", "zhaoke"); 
+//        cookies.setVersion(0);  
+//        cookies.setDomain("/pms/");   //设置范围
+//        cookies.setPath("/"); 
+//        cookieStore.addCookie(cookies);
 //        }
 
         //判断methodName请求方法 为空的情况
@@ -206,6 +215,11 @@ public class RequestBase {
         
         //得到响应码
         int status = response.getStatusLine().getStatusCode();
+        
+        //获取到cookies
+        
+        cookieStore.getCookies();
+        System.err.println(cookieStore);
     
         //判断响应码非200
         if(status!=200){
@@ -250,25 +264,36 @@ public class RequestBase {
 
 
 
-	public static void main(String[] args)  {
+	public static void main(String[] args) throws IOException  {
 		// TODO Auto-generated method stub
+//		Map<String, String> baseParam = new HashMap<String, String>();
+//		HashMap<String, String> bodyParam = new HashMap<String, String>();
+//		Map<String, String> headerMap = new HashMap<String, String>();
+//		baseParam.put("url", "http://localhost:8899/getcookies");
+//		baseParam.put("methodName", "Get");
+////		headerMap.put("Authorization", "Basic MTMzNzgxMDU1MjM6N2M0YThkMDljYTM3NjJhZjYxZTU5NTIwOTQzZGMyNjQ5NGY4OTQxYg==");
+//		System.out.println(RequestBase.request(baseParam, bodyParam, headerMap));
+//		Map<String, String> base = new HashMap<String, String>();
+//		HashMap<String, String> body = new HashMap<String, String>();
+//		Map<String, String> header = new HashMap<String, String>();
+//		base.put("url", "http://localhost:8899/postcookiesdemo");
+//		base.put("methodName", "Post");
+//		base.put("body", "1");
+//		body.put("name", "yyl");
+//		body.put("age", "22");
+//		System.out.println(RequestBase.request(base, body, header));
 		Map<String, String> baseParam = new HashMap<String, String>();
-		HashMap<String, String> bodyParam = new HashMap<String, String>();
-		Map<String, String> headerMap = new HashMap<String, String>();
-		baseParam.put("url", "http://localhost:8899/postparamdemo");
-		baseParam.put("methodName", "Post");
-//		headerMap.put("Authorization", "Basic MTMzNzgxMDU1MjM6N2M0YThkMDljYTM3NjJhZjYxZTU5NTIwOTQzZGMyNjQ5NGY4OTQxYg==");
-//		headerMap.put("Connection", "keep-alive");
-		baseParam.put("body", "name=yyl&age=22");
-		bodyParam.put("name", "yyl");
-		bodyParam.put("age", "22");
-		try {
-			System.out.println(RequestBase.request(baseParam, bodyParam, headerMap));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		  HashMap<String, String> bodyParam = new HashMap<String, String>();
+		  Map<String, String> headerMap = new HashMap<String, String>();
+		  baseParam.put("url", ReadExl.ReadCell("baseParam", 1, 1)+ReadExl.ReadCell("baseParam", 1, 2));
+		  baseParam.put("methodName", ReadExl.ReadCell("baseParam", 1, 3));
+		  baseParam.put("header", ReadExl.ReadCell("baseParam", 1, 4));
+		  baseParam.put("body", ReadExl.ReadCell("baseParam", 1, 5));
+		  baseParam.put("Authorization", ReadExl.ReadCell("baseParam", 1, 6));
+		  baseParam.put("cookies", ReadExl.ReadCell("baseParam", 1, 7));
+		  bodyParam.put(ReadExl.ReadCell("bodyParam", 1, 0),ReadExl.ReadCell("bodyParam", 1, 1));
+		  bodyParam.put(ReadExl.ReadCell("bodyParam", 2, 0),ReadExl.ReadCell("bodyParam", 2, 1));
+		  RequestBase.request(baseParam, bodyParam, headerMap);
 	}
 
 }

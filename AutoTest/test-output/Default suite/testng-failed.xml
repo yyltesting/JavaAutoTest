@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="AutoApi.test.LoginTest">
+      <class name="AutoApi.test.ApiTest">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="f"/>
+          <include name="Tologin"/>
+          <include name="beforeClass"/>
+          <include name="Topass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- AutoApi.test.LoginTest -->
+      </class> <!-- AutoApi.test.ApiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

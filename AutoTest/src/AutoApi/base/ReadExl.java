@@ -3,7 +3,8 @@ package AutoApi.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -62,8 +63,9 @@ public class ReadExl {
 	}
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-//		ReadExl cExl = new ReadExl();
-		System.out.println(ReadExl.ReadCell("Sheet1", 3, 1));
+		ReadExl cExl = new ReadExl();
+		System.out.println(ReadExl.ReadCell("bodyParam", 1, 2));
+//		Map<String, String> baseParam = new HashMap<String, String>();
 	}
 
 }

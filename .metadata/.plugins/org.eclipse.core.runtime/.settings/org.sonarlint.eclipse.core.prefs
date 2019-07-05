@@ -3,3 +3,6 @@ servers/initialized=true
 servers/localhost/auth=true
 servers/localhost/name=localhost
 servers/localhost/url=http\://localhost\:9000
+servers/my_local_sonarqube/auth=true
+servers/my_local_sonarqube/notificationsEnabled=false
+servers/my_local_sonarqube/url=http\://localhost\:9000

@@ -2,10 +2,12 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.yl.www"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="test1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -19,6 +21,30 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="480" key="width"/>
+		<item value="803" key="x"/>
+		<item value="226" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="720" key="x"/>
+		<item value="77" key="y"/>
+		<item value="667" key="height"/>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -30,8 +56,34 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="test2"/>
+			<item value="test1"/>
+			<item value="Test1"/>
+			<item value="Springboot-common1"/>
+			<item value="Springboot_common1"/>
+			<item value="wqqwq"/>
+			<item value="aaa"/>
+			<item value="AutoTest_maven"/>
+			<item value="ApiTest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\java"/>
 			<item value="D:\java\shoujiPriject\src\jiekou"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,8 +97,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="org."/>
 		</list>
 		<list key="groupId">
+			<item value="com.yl.www"/>
 		</list>
 		<list key="artifactId">
 		</list>
