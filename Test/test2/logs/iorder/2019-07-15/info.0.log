@@ -1,0 +1,114 @@
+[INFO ] 2019-07-15 14:14:12 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 13584 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-15 14:14:12 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-15 14:14:12 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 14:14:12 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 14:14:12 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-15 14:14:12 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-15 14:14:12 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-15 14:14:12 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3516 ms
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-15 14:14:12 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-15 14:14:12 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2019-07-15 14:23:33 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 2560 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-15 14:23:33 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-15 14:23:33 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 14:23:33 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 14:23:33 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-15 14:23:33 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-15 14:23:33 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-15 14:23:33 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3947 ms
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-15 14:23:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-15 14:23:33 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2019-07-15 14:32:30 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 3204 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-15 14:32:30 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-15 14:32:30 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 14:32:30 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 14:32:30 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-15 14:32:30 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-15 14:32:30 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-15 14:32:30 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3600 ms
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-15 14:32:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-15 14:32:30 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2019-07-15 14:35:18 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 7640 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-15 14:35:18 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-15 14:35:18 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 14:35:18 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 14:35:18 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-15 14:35:18 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-15 14:35:18 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-15 14:35:18 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3379 ms
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-15 14:35:18 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-15 14:35:18 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2019-07-15 16:07:30 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 15256 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-15 16:07:30 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-15 16:07:30 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 16:07:30 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 16:07:30 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-15 16:07:30 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-15 16:07:30 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-15 16:07:30 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3606 ms
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-15 16:07:30 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 16:07:30 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getmysql],methods=[GET]}" onto public int MybatisTest.Demo.getUserCount()
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-15 16:07:30 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-15 16:07:30 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-15 16:07:30 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-15 16:07:30 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-15 16:07:30 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-15 16:07:30 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-15 16:07:30 [main] MybatisTest.Application - Started Application in 7.455 seconds (JVM running for 8.269)
+[INFO ] 2019-07-15 16:10:05 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 12556 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-15 16:10:05 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-15 16:10:05 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 16:10:06 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 16:10:05 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-15 16:10:05 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-15 16:10:05 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-15 16:10:05 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3596 ms
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-15 16:10:05 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Mon Jul 15 16:10:06 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getmysql],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-15 16:10:05 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-15 16:10:05 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-15 16:10:05 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-15 16:10:05 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-15 16:10:05 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-15 16:10:05 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-15 16:10:05 [main] MybatisTest.Application - Started Application in 7.853 seconds (JVM running for 8.588)

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="MybatisTest">
+	<select id="getUserCount" resultType="Integer">
+		select count(*) from rap;
+	</select>
+	
+	<insert id="addUser" parameterType="MybatisTest.model.Rap">
+		insert into rap(id,name,flow) values(#{id},#{name},#{flow});
+	</insert>
+	
+	<update id="updateUser" parameterType="MybatisTest.model.Rap">
+		update rap set name=#{name},flow=#{flow}
+		where id=#{id};
+	</update>
+	
+	<delete id="deleteUser" parameterType="Integer">
+		delete from rap where id=#{id};
+	</delete>
+</mapper>

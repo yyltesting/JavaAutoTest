@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sat Jul 13 13:51:35 CST 2019
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1562996873332
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1562997095847
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework.boot\:spring-boot-configuration-processor\:pom\:2.1.3.RELEASE from/to central (https\://repo.maven.apache.org/maven2)\: The operation was cancelled.

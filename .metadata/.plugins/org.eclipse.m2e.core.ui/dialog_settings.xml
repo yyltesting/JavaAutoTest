@@ -7,7 +7,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="test1"/>
+			<item value="test2"/>
+			<item value="Test"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +60,9 @@
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
 			<item value="test2"/>
+			<item value="svn"/>
+			<item value="Mybatis_logback"/>
+			<item value="test2MYbatis"/>
 			<item value="test1"/>
 			<item value="Test1"/>
 			<item value="Springboot-common1"/>
@@ -97,12 +101,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org."/>
+			<item value="org.test2"/>
+			<item value="org.svn"/>
 		</list>
 		<list key="groupId">
 			<item value="com.yl.www"/>
+			<item value="svn"/>
 		</list>
 		<list key="artifactId">
+			<item value="test2"/>
+			<item value="svn"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

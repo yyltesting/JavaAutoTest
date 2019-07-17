@@ -1,11 +1,11 @@
 package config;
 
-import org.springframework.boot.autoconfigure.info.ProjectInfoProperties.Build;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.Version;
+
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;

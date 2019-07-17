@@ -1,0 +1,248 @@
+[INFO ] 2019-07-17 15:13:45 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 11048 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-17 15:13:45 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-17 15:13:45 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:13:46 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:13:45 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-17 15:13:45 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40c330c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-07-17 15:13:45 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-17 15:13:45 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-17 15:13:45 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6182 ms
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-17 15:13:45 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getusercode],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int MybatisTest.controller.Demo.adduser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:13:46 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:13:45 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:13:45 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-17 15:13:45 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2019-07-17 15:13:45 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2019-07-17 15:13:45 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2019-07-17 15:13:45 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2019-07-17 15:13:45 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:13:45 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:13:45 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-17 15:13:45 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-17 15:13:45 [main] MybatisTest.Application - Started Application in 14.644 seconds (JVM running for 15.924)
+[INFO ] 2019-07-17 15:13:45 [http-nio-8022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-07-17 15:13:45 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-07-17 15:13:45 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+[INFO ] 2019-07-17 15:16:23 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 8644 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-17 15:16:23 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-17 15:16:23 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56928307: startup date [Wed Jul 17 15:16:24 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:16:23 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-17 15:16:23 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7bbd75be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-07-17 15:16:23 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-17 15:16:23 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-17 15:16:23 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4854 ms
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-17 15:16:23 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int MybatisTest.controller.Demo.adduser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getusercode],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56928307: startup date [Wed Jul 17 15:16:24 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:16:23 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:16:23 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-17 15:16:23 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2019-07-17 15:16:23 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2019-07-17 15:16:23 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2019-07-17 15:16:23 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2019-07-17 15:16:23 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:16:23 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:16:23 [main] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:16:23 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 2019-07-17 15:16:23 [main] o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+[INFO ] 2019-07-17 15:16:23 [main] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:16:23 [main] o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:16:23 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56928307: startup date [Wed Jul 17 15:16:24 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:16:23 [main] o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[INFO ] 2019-07-17 15:16:23 [main] o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[INFO ] 2019-07-17 15:17:42 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 13588 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-17 15:17:42 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-17 15:17:42 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:17:42 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:17:42 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-17 15:17:42 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d2f5bec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-07-17 15:17:42 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-17 15:17:42 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-17 15:17:42 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3825 ms
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-17 15:17:42 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int MybatisTest.controller.Demo.adduser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getusercode],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:17:42 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:17:42 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:17:42 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-17 15:17:42 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2019-07-17 15:17:42 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2019-07-17 15:17:42 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2019-07-17 15:17:42 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2019-07-17 15:17:42 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:17:42 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:17:42 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-17 15:17:42 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-17 15:17:42 [main] MybatisTest.Application - Started Application in 8.808 seconds (JVM running for 9.632)
+[INFO ] 2019-07-17 15:17:42 [http-nio-8022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-07-17 15:17:42 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-07-17 15:17:42 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+[INFO ] 2019-07-17 15:27:03 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 3832 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-17 15:27:03 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-17 15:27:03 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56928307: startup date [Wed Jul 17 15:27:04 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:27:03 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-17 15:27:03 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$608345c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-07-17 15:27:03 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-17 15:27:03 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-17 15:27:03 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4847 ms
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-17 15:27:03 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int MybatisTest.controller.Demo.adduser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getusercode],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56928307: startup date [Wed Jul 17 15:27:04 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:27:03 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:27:03 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-17 15:27:03 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2019-07-17 15:27:03 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2019-07-17 15:27:03 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2019-07-17 15:27:03 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2019-07-17 15:27:03 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:27:03 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:27:03 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-17 15:27:03 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-17 15:27:03 [main] MybatisTest.Application - Started Application in 12.815 seconds (JVM running for 13.698)
+[INFO ] 2019-07-17 15:27:03 [http-nio-8022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-07-17 15:27:03 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-07-17 15:27:03 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+[INFO ] 2019-07-17 15:27:03 [http-nio-8022-exec-3] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[INFO ] 2019-07-17 15:27:03 [http-nio-8022-exec-3] o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[INFO ] 2019-07-17 15:50:00 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 13336 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-17 15:50:00 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-17 15:50:00 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:50:00 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:50:00 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-17 15:50:00 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea9786cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-17 15:50:00 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-17 15:50:00 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3627 ms
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-17 15:50:00 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getusercode],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateuser],methods=[POST]}" onto public int MybatisTest.controller.Demo.updateuser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteuser],methods=[POST]}" onto public int MybatisTest.controller.Demo.delectuser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int MybatisTest.controller.Demo.adduser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:50:00 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:50:00 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:50:00 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-17 15:50:00 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2019-07-17 15:50:00 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2019-07-17 15:50:00 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2019-07-17 15:50:00 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2019-07-17 15:50:00 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:50:00 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:50:00 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-17 15:50:00 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-17 15:50:00 [main] MybatisTest.Application - Started Application in 8.659 seconds (JVM running for 9.341)
+[INFO ] 2019-07-17 15:50:00 [http-nio-8022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-07-17 15:50:00 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-07-17 15:50:00 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+[INFO ] 2019-07-17 15:54:22 [main] MybatisTest.Application - Starting Application on YMZ201708291015 with PID 8648 (D:\java\Test\test2\target\classes started by Administrator in D:\java\Test\test2)
+[INFO ] 2019-07-17 15:54:22 [main] MybatisTest.Application - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-17 15:54:22 [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:54:23 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:54:22 [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+[INFO ] 2019-07-17 15:54:22 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$40c330c3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8022 (http)
+[INFO ] 2019-07-17 15:54:22 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-07-17 15:54:22 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4180 ms
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2019-07-17 15:54:22 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getusercode],methods=[GET]}" onto public int MybatisTest.controller.Demo.getUserCount()
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/adduser],methods=[POST]}" onto public int MybatisTest.controller.Demo.adduser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/updateuser],methods=[POST]}" onto public int MybatisTest.controller.Demo.updateuser(MybatisTest.model.Rap)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/deleteuser],methods=[POST]}" onto public int MybatisTest.controller.Demo.delectuser(int)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@222545dc: startup date [Wed Jul 17 15:54:23 CST 2019]; root of context hierarchy
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:54:22 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2019-07-17 15:54:22 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2019-07-17 15:54:22 [main] o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+[INFO ] 2019-07-17 15:54:22 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2019-07-17 15:54:22 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[INFO ] 2019-07-17 15:54:22 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2019-07-17 15:54:22 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:54:22 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8022"]
+[INFO ] 2019-07-17 15:54:22 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2019-07-17 15:54:22 [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8022 (http)
+[INFO ] 2019-07-17 15:54:22 [main] MybatisTest.Application - Started Application in 9.139 seconds (JVM running for 9.845)
+[INFO ] 2019-07-17 15:54:22 [http-nio-8022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2019-07-17 15:54:22 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2019-07-17 15:54:22 [http-nio-8022-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
