@@ -2,11 +2,17 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.yyl.www"/>
 			<item value="com.yl.www"/>
 		</list>
 		<list key="name">
+			<item value="AutoApi"/>
 		</list>
 		<list key="artifactId">
+			<item value="ApiAutoTest"/>
+			<item value="AutoApi"/>
+			<item value="com.yyl.www"/>
+			<item value="test"/>
 			<item value="test2"/>
 			<item value="Test"/>
 		</list>
@@ -59,6 +65,7 @@
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
+			<item value="ApiAutoTest"/>
 			<item value="test2"/>
 			<item value="svn"/>
 			<item value="Mybatis_logback"/>
@@ -101,16 +108,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="org.test2"/>
-			<item value="org.svn"/>
+			<item value="org.ApiAutoTest"/>
 		</list>
 		<list key="groupId">
-			<item value="com.yl.www"/>
-			<item value="svn"/>
+			<item value="com.yyl.www"/>
 		</list>
 		<list key="artifactId">
-			<item value="test2"/>
-			<item value="svn"/>
+			<item value="ApiAutoTest"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

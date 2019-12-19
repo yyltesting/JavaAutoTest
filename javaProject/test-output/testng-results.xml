@@ -2,79 +2,79 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73724" started-at="2019-06-05T09:45:20Z" finished-at="2019-06-05T09:46:34Z">
+  <suite name="Default suite" duration-ms="38626" started-at="2019-12-17T03:20:35Z" finished-at="2019-12-17T03:21:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73724" started-at="2019-06-05T09:45:20Z" finished-at="2019-06-05T09:46:34Z">
+    <test name="Default test" duration-ms="38626" started-at="2019-12-17T03:20:35Z" finished-at="2019-12-17T03:21:14Z">
       <class name="crm.webtest.LoginTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeClass" is-config="true" duration-ms="36882" started-at="2019-06-05T17:45:21Z" finished-at="2019-06-05T17:45:57Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeClass" is-config="true" duration-ms="15504" started-at="2019-12-17T11:20:35Z" finished-at="2019-12-17T11:20:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="logF1()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF1" duration-ms="13310" started-at="2019-06-05T17:45:57Z" finished-at="2019-06-05T17:46:11Z">
+        <test-method status="PASS" signature="logF1()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF1" duration-ms="4851" started-at="2019-12-17T11:20:50Z" finished-at="2019-12-17T11:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logF1 -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-06-05T17:45:57Z" finished-at="2019-06-05T17:45:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:20:50Z" finished-at="2019-12-17T11:20:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-06-05T17:46:11Z" finished-at="2019-06-05T17:46:11Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-17T11:20:55Z" finished-at="2019-12-17T11:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-06-05T17:46:11Z" finished-at="2019-06-05T17:46:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:20:55Z" finished-at="2019-12-17T11:20:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logF2()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF2" duration-ms="5006" started-at="2019-06-05T17:46:11Z" finished-at="2019-06-05T17:46:16Z">
+        <test-method status="PASS" signature="logF2()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF2" duration-ms="4353" started-at="2019-12-17T11:20:55Z" finished-at="2019-12-17T11:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logF2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-06-05T17:46:16Z" finished-at="2019-06-05T17:46:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-06-05T17:46:16Z" finished-at="2019-06-05T17:46:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logF3()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF3" duration-ms="4356" started-at="2019-06-05T17:46:16Z" finished-at="2019-06-05T17:46:20Z">
+        <test-method status="PASS" signature="logF3()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF3" duration-ms="4433" started-at="2019-12-17T11:21:00Z" finished-at="2019-12-17T11:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logF3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-06-05T17:46:20Z" finished-at="2019-06-05T17:46:20Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:21:00Z" finished-at="2019-12-17T11:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-06-05T17:46:20Z" finished-at="2019-06-05T17:46:20Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:21:00Z" finished-at="2019-12-17T11:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logF4()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF4" duration-ms="8827" started-at="2019-06-05T17:46:20Z" finished-at="2019-06-05T17:46:29Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:21:04Z" finished-at="2019-12-17T11:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-12-17T11:21:04Z" finished-at="2019-12-17T11:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="logF4()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF4" duration-ms="4381" started-at="2019-12-17T11:21:04Z" finished-at="2019-12-17T11:21:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logF4 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-06-05T17:46:29Z" finished-at="2019-06-05T17:46:29Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:21:08Z" finished-at="2019-12-17T11:21:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-06-05T17:46:29Z" finished-at="2019-06-05T17:46:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="logF5()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF5" duration-ms="4501" started-at="2019-06-05T17:46:29Z" finished-at="2019-06-05T17:46:33Z">
+        <test-method status="PASS" signature="logF5()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="logF5" duration-ms="4391" started-at="2019-12-17T11:21:08Z" finished-at="2019-12-17T11:21:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logF5 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-06-05T17:46:33Z" finished-at="2019-06-05T17:46:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:21:08Z" finished-at="2019-12-17T11:21:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterClass" is-config="true" duration-ms="787" started-at="2019-06-05T17:46:33Z" finished-at="2019-06-05T17:46:34Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterClass" is-config="true" duration-ms="692" started-at="2019-12-17T11:21:13Z" finished-at="2019-12-17T11:21:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:crm.webtest.LoginTest@6a2bcfcb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-12-17T11:21:13Z" finished-at="2019-12-17T11:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- crm.webtest.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -1,8 +1,6 @@
 package rimi.com;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class for_1 {
 
@@ -10,19 +8,19 @@ public class for_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		int a[]={1,2,3,4,5};
-//		for(int i=0;i<a.length;i++){
-//			System.out.println(a[i]+"Äã¿´");
-//		}
-//		for(int i=1;i<=5;i++){
-//			for(int j=1;j<=5-i;j++){
-//				System.out.print(" ");
-//			}
-//			for(int j=1;j<=2*i-1;j++){
-//				System.out.print("*");
-//			}
-//			System.out.println();
-//		}
+		int a[]={1,2,3,4,5};
+		for(int i=0;i<a.length;i++){
+			System.out.println(a[i]+"Äã¿´");
+		}
+		for(int i=1;i<=5;i++){
+			for(int j=1;j<=5-i;j++){
+				System.out.print(" ");
+			}
+			for(int j=1;j<=2*i-1;j++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 //		
 //		int a[]={2,5,9,6,3,1};
 //		for(int i=0;i<a.length-1;i++){
@@ -76,7 +74,7 @@ public class for_1 {
 //			}
 //		}
 //		System.out.println(a[a.length-1]);
-		
+//		
 //		for(int i=1;i<=5;i++){
 //			for(int j=5;j>=i;j--){
 //			System.out.print("*");
@@ -145,21 +143,7 @@ public class for_1 {
 //		System.out.println(1);
 //	}
 		
-//		int a[]={1,6,2,7,5,3,13};
-//		for (int i=0;i<a.length;i++){
-//			for(int j=0;j<a.length-i;j++){
-//				int b;
-//				if(a[i]>a[i+1]){
-//					b=a[i+1];
-//					a[i+1]=a[i];
-//					a[i]=b;
-//				}				
-//			}
-//		}
-//		System.out.println(a);
 	
-	
-		
 //		int a[]={72,89,65,58,87,91,53,82,71,93,76,68};
 //		double sum=0;
 //		for(int i=0;i<a.length;i++){
@@ -169,6 +153,18 @@ public class for_1 {
 //		System.out.println(sum/a.length);
 
 		
+//		int a[]={1,9,5,7,6,4,3};
+//		for(int i=0;i<a.length;i++){
+//			for(int j=0;j<a.length-1-i;j++){
+//				int b;
+//				if(a[j]>a[j+1]){
+//					b = a[j];
+//					a[j]=a[j+1];
+//					a[j+1]= b;
+//				}
+//			}
+//		}
+
 
 		
 		
