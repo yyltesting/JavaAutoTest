@@ -13,6 +13,8 @@ public class GenpContent {
 	public static String Genp = "//*[@id='dcs_line_genp']";
 	//照片统计
 	public static String Photostatistics = "//*[@id='navbar-container']/div/ul/li[8]/a";
+	//照片统计表头
+	public static String Title = "//*[@id='main-container']/div[2]/div[1]/div[2]/p[1]/span";
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -16,19 +16,28 @@ public class Login {
 		browser.sleep(1);
 		//点击工程管理
 		browser.click("id", LoginContent.ProjectAdministration);
+		browser.sleep(3);
 		//等待元素出现
-		browser.waitFor(3, "xpath", LoginContent.Backstage);
+		browser.waitFor(60, "xpath", LoginContent.Backstage);
+		System.out.println(browser.value("xpath", LoginContent.Backstage));
 		//进入后台
 		browser.click("xpath", LoginContent.Backstage);
-		browser.sleep(1);
+		browser.sleep(3);
+		System.out.println(browser.title());
 		//切换窗口
 		browser.changeWindow(1);
+		System.out.println(browser.title());
+//		browser.openUrl("https://ppm.yunget.com/project/93cd0b9a23a43286cb8f564ef27e0879/index");
 		browser.sleep(2);
 		
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		UseBrowser useBrowser = new UseBrowser();
+		Login login = new Login();
+		login.Login();
+		useBrowser.quit();
 
 	}
 

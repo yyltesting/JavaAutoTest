@@ -64,7 +64,7 @@ public class ReadExl {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		ReadExl cExl = new ReadExl();
-		System.out.println(ReadExl.ReadCell("sheet1", 1, 1));
+		System.out.println(ReadExl.ReadCell("bodyParam", 1, 2));
 //		Map<String, String> baseParam = new HashMap<String, String>();
 	}
 

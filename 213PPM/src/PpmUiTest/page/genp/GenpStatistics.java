@@ -3,8 +3,6 @@ package PpmUiTest.page.genp;
 import PpmUiTest.base.BrowserOption;
 import PpmUiTest.base.UseBrowser;
 import PpmUiTest.content.genpcontent.GenpContent;
-import PpmUiTest.page.login.Login;
-
 
 public class GenpStatistics {
 	BrowserOption br;
@@ -24,23 +22,19 @@ public class GenpStatistics {
 		//点击进入无人机影像
 		br.click("xpath",GenpContent.Genp);
 		br.sleep(2);
-		//点击进入照片统计
-		br.click("xpath", "//*[@id='navbar-container']/div/ul/li[8]/a");
-		//等待统计页面出现
-//		br.waitFor(20, "xpath", "//*[@id='main-container']/div[2]/div[1]/div[2]/p[1]/span");
-		br.sleep(2);
+//		//点击进入照片统计
+//		br.click("xpath", GenpContent.Photostatistics);
+//		//等待统计页面出现
+////		br.waitFor(20, "xpath", "//*[@id='main-container']/div[2]/div[1]/div[2]/p[1]/span");
+//		br.sleep(2);
 	}
 	//获取表内容
 	public String Title(){
-		return br.value("xpath", "//*[@id='table-unit-section']/caption");
+		return br.value("xpath", GenpContent.Title);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		UseBrowser use=new UseBrowser();
-		GenpStatistics loginpage=new GenpStatistics();
-		loginpage.GetintoStatistics();
-		System.out.println(loginpage.Title());
-		use.quit();
+
 		
 	}
 

@@ -1,5 +1,7 @@
 package PpmUiTest.base;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -123,13 +125,13 @@ public class BrowserOption {
     	Actions action = new Actions(driver);  
     	if(type.equals("id")) {
     	WebElement element = driver.findElement(By.id(localtor));
-        action.dragAndDropBy(element, x, y).release().perform();
+        action.dragAndDropBy(element, x, y).perform();
     	}else if(type.equals("name")) {
     		WebElement element = driver.findElement(By.name(localtor));
-    		action.dragAndDropBy(element, x, y).release().perform();
+    		action.dragAndDropBy(element, x, y).perform();
     	}else if(type.equals("xpath")) {
     		WebElement element = driver.findElement(By.xpath(localtor));
-    		action.dragAndDropBy(element, x, y).release().perform();   	
+    		action.dragAndDropBy(element, x, y).perform();   	
     	}
     }
     //鼠标悬停
@@ -150,11 +152,11 @@ public class BrowserOption {
     public void waitFor(int time,String type,String localtor) {
           WebDriverWait wait=new WebDriverWait(driver,time);
           if(type.equals("id")) {
-          wait.until(ExpectedConditions.presenceOfElementLocated(By.id(localtor)));
+          wait.until(ExpectedConditions.elementToBeClickable(By.id(localtor)));
           }else if(type.equals("name")) {
-          wait.until(ExpectedConditions.presenceOfElementLocated(By.name(localtor)));   
+          wait.until(ExpectedConditions.elementToBeClickable(By.name(localtor)));   
           }else if(type.equals("xpath")) {
-          wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(localtor)));  
+          wait.until(ExpectedConditions.elementToBeClickable(By.xpath(localtor)));  
           }
     }
     //获取弹出框内容
@@ -180,9 +182,12 @@ public class BrowserOption {
     }
     //切换窗口
     public void changeWindow(int i){
+    	System.out.println(driver.getCurrentUrl());
           Set<String> setWindows=driver.getWindowHandles();
+          System.out.println(setWindows);
           List<String> it = new ArrayList<String>(setWindows);
           driver.switchTo().window(it.get(i));
+          System.out.println(driver.getCurrentUrl());
     }
     //通过内容选择选择框内容
     public void selectWay(String type,String localor,String text){

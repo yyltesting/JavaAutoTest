@@ -1,5 +1,5 @@
 <project basedir="." default="regression" name="automation test">
-    <property name="base.dir" value="\java文件\javaProject"/>
+    <property name="base.dir" value="\java\213PPM"/>
     <property name="testng.output.dir" value="${base.dir}/test-output"/>
     <property name="3rd.lib.dir" value="${base.dir}/lib"/>
     <property name="testng.file" value="TestPpm.xml"/>

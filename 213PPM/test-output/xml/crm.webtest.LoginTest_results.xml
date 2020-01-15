@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="26.386">
+  <properties />
+  
+  
+            <testcase name="logF1" time="7.784" classname="crm.webtest.LoginTest" />
+                <testcase name="logF4" time="5.628" classname="crm.webtest.LoginTest" />
+                <testcase name="logF2" time="4.338" classname="crm.webtest.LoginTest" />
+                <testcase name="logF5" time="4.355" classname="crm.webtest.LoginTest" />
+                <testcase name="logF3" time="4.281" classname="crm.webtest.LoginTest" />
+      
+</testsuite>
