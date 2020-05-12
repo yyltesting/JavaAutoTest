@@ -2,15 +2,20 @@ package PpmUiTest.base;
 
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.http.util.Args;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -219,6 +224,15 @@ public class BrowserOption {
           WebElement one=driver.findElement(By.xpath(localorone));    
           WebElement two=driver.findElement(By.xpath(localortwo));    
           (new Actions(driver)).dragAndDrop(one, two).perform();
+    }
+    //截图
+    public void takeScreenshot(String screenPath) {
+        try {
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);//OutputType.FILE--截幕保存为图片
+            FileUtils.copyFile(scrFile, new File(screenPath));//把图片保存到指定路径 
+        } catch (IOException e) {
+            System.out.println("截图出现错误");
+        }
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,6 +1,8 @@
 package rimi.com;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class for_1 {
 
@@ -8,12 +10,16 @@ public class for_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[]={1,2,3,4,5};
-		for(int i=0;i<a.length;i++){
-			System.out.println(a[i]+"你看");
-		}
-		for(int i=1;i<=5;i++){
-			for(int j=1;j<=5-i;j++){
+//		int a[]={1,2,3,4,5};
+//		for(int i=0;i<a.length;i++){
+//			System.out.println(a[i]+"你看");
+//		}
+//		
+		try{
+		Scanner scan = new Scanner(System.in);
+		int number = scan.nextInt();
+		for(int i=1;i<=number;i++){
+			for(int j=1;j<=number-i;j++){
 				System.out.print(" ");
 			}
 			for(int j=1;j<=2*i-1;j++){
@@ -21,6 +27,10 @@ public class for_1 {
 			}
 			System.out.println();
 		}
+		}catch(InputMismatchException e)
+		{
+			   System.out.print("请输入整数"+ e);
+			}
 //		
 //		int a[]={2,5,9,6,3,1};
 //		for(int i=0;i<a.length-1;i++){

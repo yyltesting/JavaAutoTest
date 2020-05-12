@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/shoujiPriject/src/Zuche/base/Touchdriver.java"/>
+<listEntry value="/Flutter_UI/src/HunanApp/base/TouchDriver.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Zuche.base.Touchdriver"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="shoujiPriject"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="HunanApp.base.TouchDriver"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Flutter_UI"/>
 </launchConfiguration>
