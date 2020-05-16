@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="io.swagger.annotations.ApiOperation"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="MybatisTest.model.Rap"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="java.util.function.IntToDoubleFunction"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By.ById"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
@@ -41,7 +37,6 @@
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MultiTouchAction"/>
 <fullyQualifiedTypeName name="org.apache.xmlbeans.impl.xb.xsdschema.Public"/>
@@ -51,7 +46,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="PpmAPP.base.DriverOption"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="PpmAPP.content.AppLoginContent"/>
 <fullyQualifiedTypeName name="PpmAPP.base.TouchDriver"/>
 <fullyQualifiedTypeName name="PpmAPP.page.AppLogin"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="HunanApp.base.TouchDriver"/>
 <fullyQualifiedTypeName name="HunanApp.base.DriverOption"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="com.sun.javafx.scene.paint.GradientUtils.Point"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

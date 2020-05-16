@@ -2,11 +2,14 @@ package PpmUiTest.base;
 
 
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.http.util.Args;
@@ -22,6 +25,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.sun.javafx.scene.paint.GradientUtils.Point;
 
 public class BrowserOption {
 	public WebDriver driver;
@@ -225,14 +230,35 @@ public class BrowserOption {
           WebElement two=driver.findElement(By.xpath(localortwo));    
           (new Actions(driver)).dragAndDrop(one, two).perform();
     }
-    //截图
-    public void takeScreenshot(String screenPath) {
+    //截图指定图片
+    public void GetImg(String localtion,String imgLocation,String name) {
         try {
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);//OutputType.FILE--截幕保存为图片
-            FileUtils.copyFile(scrFile, new File(screenPath));//把图片保存到指定路径 
+            BufferedImage fullImg = ImageIO.read(scrFile); //读取截屏图片
+            WebElement element = driver.findElement(By.xpath(localtion)); //获取具体元素图片位置
+            org.openqa.selenium.Point point = element.getLocation();  //读取元素图片的位置
+            //获取宽高
+            int elewidth = element.getSize().getWidth();  //获取元素图片的宽
+            int eleheight = element.getSize().getHeight();  //获取元素图片的高
+            //得到的图片是整个屏幕的截图，我们可以处理一下，对图片进行截取，只保留验证码那一部分
+            BufferedImage eleScreenshot= fullImg.getSubimage(point.getX(), point.getY(),
+            		elewidth, eleheight);
+            	ImageIO.write(eleScreenshot, "png", scrFile);
+            	File screenshotLocation = new File(imgLocation + name + ".png");//把图片保存到指定路径并命名
+            	FileUtils.copyFile(scrFile, screenshotLocation);
         } catch (IOException e) {
             System.out.println("截图出现错误");
         }
+    }
+     //截屏
+        public void takeScreenshot(String screenPath,String name) {
+            try {
+                File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);//OutputType.FILE--截幕保存为图片
+                	File screenshotLocation = new File(scrFile + name + ".png");//把图片保存到指定路径并命名
+                	FileUtils.copyFile(scrFile, screenshotLocation);
+            } catch (IOException e) {
+                System.out.println("截图出现错误");
+            }   
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
