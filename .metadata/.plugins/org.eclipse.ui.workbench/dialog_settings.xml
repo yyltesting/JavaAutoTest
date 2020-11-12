@@ -37,4 +37,6 @@
 			<item value="org.tigris.subversion.subclipse.ui.svn"/>
 		</list>
 	</section>
+	<section name="FileSystemImportWizard">
+	</section>
 </section>

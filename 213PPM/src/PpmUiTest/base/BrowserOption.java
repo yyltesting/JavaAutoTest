@@ -130,7 +130,7 @@ public class BrowserOption {
           JavascriptExecutor js =(JavascriptExecutor)driver;
           js.executeScript(JS);
           }
-    //鼠标拖动移动元素
+    //鼠标拖动移动元素，x、y元素需要移动得横纵坐标距离
     public void RemoveElement(int x , int y ,String type,String localtor){
     	Actions action = new Actions(driver);  
     	if(type.equals("id")) {
